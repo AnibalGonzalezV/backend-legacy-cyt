@@ -1,0 +1,26 @@
+#................
+#  SCP SPACE QA
+#................
+applications:
+- name: capstonebackend
+  memory: 4GB
+  disk_quota: 8GB
+  command: null
+  #command: bash ./run.sh  
+  #command: python manage.py runserver
+  #command: python java_install.py
+  random-route: false
+
+  #buildpack: https://github.com/cloudfoundry/python-buildpack   
+
+  env: 
+    JAVA_HOME: /home/vcap/app/.jdk/jdk-11.0.21+9/bin/java
+
+    ALLOWED_HOSTS: localhost,capstonefront.cfapps.br10.hana.ondemand.com,capstonebackend.cfapps.br10.hana.ondemand.com
+    DATABASE_URL: postgres://postgres-e2242da1-06b9-4d47-94c2-d22ae8a2d190.c2gr1wyjqxtw.sa-east-1.rds.amazonaws.com:1705/smartwinery
+    DEBUG: false
+    SECRET_KEY: 5fa66d25dd596b0ab90cd66f02b0b7e8
+    CORS_ALLOWED_ORIGINS : http://localhost:3002,https://ucnfront.cfapps.br10.hana.ondemand.com
+
+  
+

@@ -1,0 +1,13 @@
+
+*/__pycache__/*
+venv
+.env
+.dockerignore
+
+# BTP
+manifest.yml
+manifest-dev.yml
+manifest-pro.yml
+push-dev.cmd
+push-pro.cmd
+
