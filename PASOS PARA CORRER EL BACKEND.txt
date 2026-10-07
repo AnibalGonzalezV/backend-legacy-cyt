@@ -1,9 +1,0 @@
-.\venv\Scripts\activate
-python manage.py runserver
-
-
-
-//migrar base de datos
-
-python manage.py makemigrations dssProject
-python manage.py migrate dssProject
